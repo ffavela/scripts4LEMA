@@ -1,0 +1,14 @@
+*.txt
+*.fsires
+*.mpa
+*.dat
+*.bak
+#*#
+*#
+~*~
+*~
+*.btc
+*.fbres
+
+*.zip
+*.rar
