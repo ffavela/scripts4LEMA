@@ -1,0 +1,19 @@
+A set of scripts for analysing the fsires files that are given by the
+mass spectrometer. The shell script "fsiresParser.sh" parses only the
+table data for each fsires file and for each "Sample Id" it creates a
+txt file with all the respective runs in different blocks of data (in
+ascending order with respect of the fsires file). It also outputs an
+average file.
+
+The "plottingScript.sh" plots the txt files including the average files.
+
+This set of scripts were written for helping students analizing files
+given by the Laboratorio de Espectrometría de Masas con Aceleradores
+(LEMA) in Mexico.
+
+Before using make sure you have the following sofware:
+
+Bash
+gnuplot (at least 5.0)
+python3
+python3-numpy
