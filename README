@@ -17,3 +17,10 @@ Bash
 gnuplot (at least 5.0)
 python3
 python3-numpy
+
+For sample fsires files download the following file:
+
+https://drive.google.com/open?id=0B2znJ2THUGDiYWtOOVhxcUltck0
+
+And unzip it into the scripts4LEMA directory. Then simply run the
+"fsiresParser.sh" script to get the txt files.

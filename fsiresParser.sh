@@ -33,6 +33,7 @@ function createAveTxts {
     do
 	avFilename="ave$i"
 	echo "Creating the average file for $i named $avFilename"
+	#Explicitly using 3
 	python3 createAveTxts.py -i $i > $avFilename
     done
 }
