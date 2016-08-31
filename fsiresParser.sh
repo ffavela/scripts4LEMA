@@ -4,7 +4,7 @@
 
 a=$(find . -type f -regex ".*\.txt$")
 
-# [ "$a" != "" ] && rm *.txt && echo "removing all txt's"
+[ "$a" != "" ] && rm *.txt && echo "removing all txt's"
 
 function createInitialTxts {
     for i in `ls *.fsires | sort -V` #Important to sort
@@ -23,8 +23,9 @@ function createInitialTxts {
 	newlineVal="\n\n"
 	[ ! -f $txtName ] && touch $txtName && newlineVal=""
 	echo -e "$newlineVal#$baseI" >> $txtName
-	awk '/^[[:digit:]]+[[:space:]]+[[:digit:]]+/ {print $0;}' $i \
-	    | cut -d' ' -f1,4,7,11>> $txtName
+	awk '/^[[:digit:]]+[[:space:]]+[[:digit:]]+/ {print $0;}' $i |\
+	    tr -d "\r"|\
+	    cut -d' ' -f1,4,7,11>> $txtName #Choosing specific columns
     done 
 }
 

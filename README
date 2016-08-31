@@ -23,4 +23,15 @@ For sample fsires files download the following file:
 https://drive.google.com/open?id=0B2znJ2THUGDiYWtOOVhxcUltck0
 
 And unzip it into the scripts4LEMA directory. Then simply run the
-"fsiresParser.sh" script to get the txt files.
+"fsiresParser.sh" script to get the txt files. The script will only
+choose as relevant columns the first, fourth, seventh, and eleventh
+ones.
+
+In case you want to plot a specific txt file (including the average
+files); simply run the plottingScript.sh (gnuplot is needed) with one of
+the txt files as argument.
+
+In case you want to plot against a specific column (say the fourth one),
+run:
+
+./plottingScript.sh C7.txt -c 4
