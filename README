@@ -18,6 +18,8 @@ gnuplot (at least 5.0)
 python3
 python3-numpy
 
+eog (In case you are not using Gnome)
+
 For sample fsires files download the following file:
 
 https://drive.google.com/open?id=0B2znJ2THUGDiYWtOOVhxcUltck0
